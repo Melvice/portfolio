@@ -1,10 +1,89 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  background-image: url(assets/Grad.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  font-weight: 600;
+  line-height: 2rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}  */
+
+.btn {
+  background: linear-gradient(
+    92.23deg,
+    rgb(225, 100, 190) 0%,
+    rgb(137, 46, 114) 35%,
+    rgba(0, 212, 255, 1) 100%
+    rgb(84, 57, 181) 100%
+  );
+  box-shadow: 0px 4.42px 107.23px rgba(255, 86, 246, 0.51);
+}
+.btn:hover{
+  background: linear-gradient(
+    92.23deg,
+    rgb(118, 56, 211) 0%,
+    rgb(69, 147, 207) 35%,
+    rgb(186, 23, 183) 100%
+    rgb(226, 104, 200) 100%
+  );
+}
+.gradient,
+.active {
+  background: linear-gradient(
+    92.23deg,
+    rgb(118, 56, 211) 0%,
+    rgb(69, 147, 207) 35%,
+    rgb(186, 23, 183) 100%
+    rgb(226, 104, 200) 100%
+  );
+}
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+@layer base {
+  body {
+    @apply font-secondary font-semibold leading-8 text-lg text-white ;
+  }
+  .h2{
+    @apply font-primary font-semibold leading-8 text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+  .h3{
+    @apply font-primary font-semibold leading-[46px] text-[26px] mb-6;
+  }
+  .btn{
+    @apply rounded-full font-primary text-white font-medium;
+  }
+  .btn-sm{
+    @apply h-[48px] px-6 text-sm;
+  }
+  .btn-lg{
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link{
+    @apply text-base;
+  }
+
+  .text-gradient{
+    @apply bg-gradient-to-r from-[#42A6E3] to-[#FF56F6] font-bold font-primary text-transparent bg-clip-text hover:to[#42A6E3];
+  }
+  .section{
+    @apply py-8 lg:py-24 lg:h-screen flex items-center; 
+  }
+
 }
 
 code {
