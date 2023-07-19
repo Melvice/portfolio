@@ -13,7 +13,7 @@ import {fadeIn, variants} from '../variants'
 const Banner  = () => {
     return (
       <div className='min-h-[100vh] lg:min-h-[95vh] flex items-center bgBanner' id = 'home'>
-        <div className='homeUI bg-slate-900/75 backdrop:blur-2xl px-8'>
+        <div className='homeUI bg-slate-950/90 backdrop:blur-2xl px-8'>
         <div className='container mx-auto '>
           <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
             {/**text */}
