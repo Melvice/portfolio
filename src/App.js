@@ -6,18 +6,20 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Nav from './components/Nav';
 import Projects from './components/Projects';
+import Formation from './components/formation';
 
 const  App = () => {
   return (
     <>
-    <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
+    <div className='bg-site bg-no-repeat bg-contain'>
     <Header/>
     <Banner/>
     <Nav/>
     <About/>
+    <Formation/>
     <Projects/>
     <Contact/>
-    <div className='h-[3000px] '></div>
+    <div className='h-[8000px] '></div>
     </div>
     </>
   );

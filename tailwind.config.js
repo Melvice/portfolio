@@ -3,8 +3,8 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,csx}"],
   theme: {
     fontFamily: {
-      primary: 'Orbitron',
-      secondary: 'Rajdhani',
+      primary: 'Roboto',
+      secondary: 'Montserrat',
       tertiary: 'Aldrich',
     },
     container:{
@@ -25,8 +25,7 @@ module.exports = {
         accent: '#B809C3'
     },
     backgroundImage: {
-    site : "url('/src/assets/gradient.jpg')",
-    about: "url('/src/assets/images/footer-texture.png')",
+    about: "url('/src/assets/gradient.jpg')",
     contact: "url('/src/assets/images/contact.jpg')",
     },
   }
