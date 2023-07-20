@@ -13,7 +13,7 @@ import {fadeIn, variants} from '../variants'
 const Banner  = () => {
     return (
       <div className='min-h-[100vh] lg:min-h-[95vh] flex items-center bgBanner' id = 'home'>
-        <div className='homeUI bg-slate-950/90 backdrop:blur-2xl px-8'>
+        <div className='homeUI  backdrop:blur-2xl px-8'>
         <div className='container mx-auto '>
           <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
             {/**text */}
@@ -48,18 +48,6 @@ const Banner  = () => {
                   repeat={Infinity}
                 />
               </motion.div>
-              {/* <motion.p 
-              variants={fadeIn('up', 0.5)} 
-              initial='hidden' 
-              whileInView={'show'} 
-              viewport={{once: false, amount: 0.7}} 
-              className='mb-8 max-w-lg mx-auto  lg:mx-0 '>
-                Hi! my name is Melvice.I'm a student at Polytechnic de Montreal studying
-                Computer Science and Engineering. I'm a full-stack developer with
-                experience in React, Node.js, and MongoDB. I'm also interested in
-                machine learning and data science. I'm currently looking for a
-                an internship in software development.
-              </motion.p> */}
               <motion.div 
               variants={fadeIn('up', 0.6)} 
               initial='hidden' 

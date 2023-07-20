@@ -3,18 +3,141 @@
 @tailwind utilities;
 
 body {
-  background:  #28293E;
+  /* background:  #28293E; */
+  background-image: url('./assets/polygon.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
 } 
 
-/* .bgAbout{
-  background: linear-gradient(0deg, #afcfea 0%, #0E1C28 100%), #617AFF;
-} */
 .img{
   margin-left: 9rem;
 }
 
 .bgBanner{
-  background:  #28293E;
+  /* background:  #28293E; */
+  /* background-image: url('./assets/polygon.jpg'); */
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.bgFormation{
+  background-image: url('./assets/polygon.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;   
+}
+
+@-webkit-keyframes slidein {
+  from {background-position: top; background-size:2000px; }
+  to {background-position: -100px 0px;background-size:2750px;}
+  }
+  
+  @keyframes slidein {
+  from {background-position: top;background-size:2000px; }
+  to {background-position: -100px 0px;background-size:2750px;}
+  
+  }
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  width: 30px;
+  height: 30px;
+  flex-wrap: wrap;
+}
+.article-card {
+  transform: scale(0.8);
+  width: 450px;
+  height: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 300ms;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+}
+
+.article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+}
+
+.skill-card {
+  transform: scale(0.8);
+  width: 600px;
+  height: 90px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 300ms;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+}
+.skill-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+}
+
+
+.article-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-card .content {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  padding: 30px 20px 20px 20px;
+  height: auto;
+  bottom: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+}
+
+.article-card .date,
+.article-card .title {
+  margin: 0;
+}
+
+.article-card .date {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 4px;
+}
+
+.article-card .title {
+  font-size: 22px;
+  color: #fff;
 }
 
 .homeUI{
@@ -27,7 +150,18 @@ border-radius: 10px;
 width: 100vw;
 margin: 0 5% 10% 5%;
 padding: 50px;
-background: url(./assets/Rectangle.png), lightgray 0% 0% / 154.22531366348267px 154.22531366348267px repeat, radial-gradient(151.92% 127.02% at 15.32% 21.04%, rgba(118, 60, 172, 0.20) 0%, rgba(110, 191, 244, 0.04) 77.08%, rgba(70, 144, 212, 0.00) 100%);
+background:#20212467
+}
+
+.formationUI{
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0px );
+  -webkit-backdrop-filter: blur( 0px );
+  border-radius: 10px;
+  box-shadow: 4px 7px 26px 0px rgba(13, 14, 13, 0.61);
+  border: 1px solid rgba(5, 5, 5, 0.521);
+  margin-bottom: 2%;
+  padding: 0.5%;
 }
 .radiant{
   width: 625px;
@@ -50,7 +184,7 @@ background: url(./assets/Rectangle.png), lightgray 0% 0% / 154.22531366348267px 
 .portrait{
   border-radius: 707px;
   border: 12px solid #f8f8f8;
-  box-shadow: #763CAC 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: #688597 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
 
 }
 .title{
@@ -166,7 +300,8 @@ p{
   -moz-osx-font-smoothing: grayscale;
   height: 60px;
   box-shadow: 0px 4.42px 107.23px rgba(255, 86, 246, 0.51);
-  background: url(./assets/Rectangle.png), lightgray 0% 0% / 154.22531366348267px 154.22531366348267px repeat, radial-gradient(151.92% 127.02% at 15.32% 21.04%, rgba(118, 60, 172, 0.20) 0%, rgba(110, 191, 244, 0.04) 77.08%, rgba(70, 144, 212, 0.00) 100%);
+  background: linear-gradient(#9034ba, #b65572);
+  /* background: url(./assets/Rectangle.png), lightgray 0% 0% / 154.22531366348267px 154.22531366348267px repeat, radial-gradient(151.92% 127.02% at 15.32% 21.04%, rgba(118, 60, 172, 0.20) 0%, rgba(110, 191, 244, 0.04) 77.08%, rgba(70, 144, 212, 0.00) 100%); */
   background-blend-mode: overlay, normal;
   backdrop-filter: blur(40px);
   border: 1px solid rgb(112, 20, 138);

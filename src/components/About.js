@@ -1,8 +1,4 @@
 import React from 'react';
-// CountUp
-import CountUp from 'react-countup';
-// intersection observer hook
-import { useInView } from 'react-intersection-observer';
 //images 
 import robot from '../assets/robotMaster.jpg'
 import sport from '../assets/sport.jpg'
@@ -11,9 +7,6 @@ import volunteer from '../assets/volunteer.png'
 
 
 const About  = () => {
-  // const [ref, inView] = useInView({
-  //   threshold: 0.5,
-  // });
     return (
       <div className='section bgAbout' id = 'about' >
        <div className='container mx-auto'>
