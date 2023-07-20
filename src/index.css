@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background: black;
+  background:  #28293E;
 } 
 
 /* .bgAbout{
@@ -14,7 +14,7 @@ body {
 }
 
 .bgBanner{
-  background: black;
+  background:  #28293E;
 }
 
 .homeUI{
@@ -80,6 +80,8 @@ background: url(./assets/Rectangle.png), lightgray 0% 0% / 154.22531366348267px 
   width: 256px;
   height: 24px;
   flex-shrink: 0;
+  width: fit-content;
+  padding-left: 15%;
 }
 .image{
   width: 115px;
@@ -110,6 +112,7 @@ background: url(./assets/Rectangle.png), lightgray 0% 0% / 154.22531366348267px 
   border-radius: 15px;
   box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
   border: 1px solid rgba(5, 5, 5, 0.521);
+  padding: 5%;
 }
 .desc{
   color: #FFF;
@@ -118,38 +121,20 @@ background: url(./assets/Rectangle.png), lightgray 0% 0% / 154.22531366348267px 
   font-style: normal;
   font-weight: 500;
   line-height: 10.5px; /* 131.25% */
-  width: 232px;
-  height: 48px;
+  width: fit-content;
+  height: fit-content;
   flex-shrink: 0;
-  margin-top: 30px;
+  margin-top: 50px;
+  padding-left: 15%;
 }
-.card {
-  text-align:center;
-  left: 100px;
-  width: 250px;
-  height: 350px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background: linear-gradient(130deg, #130428 7.29%, #0e0716 34.38%, #4c2b79 56.77%, #0b0216 84.90%, #190634 100%);
-  box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
-  transition:.6s;
-  transform: rotatex(75deg) translatey(-200px) translatez(-100px);
-  border-radius: 5%;
-  -webkit-border-radius: 5%;
-  -moz-border-radius: 5%;
-  -ms-border-radius: 5%;
-  -o-border-radius: 5%;
-}
-.card:hover{
-  transform: rotatex(0deg);
-  transform: rotatez(0deg);
-  transition:.6s;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-}
-.card img{
-  transform: translateY(15px);
-  width:200px;
+
+.cards img{
+  width:130px;
   height:120px;
+  -webkit-transform: translateY(15px);
+  -moz-transform: translateY(15px);
+  -ms-transform: translateY(15px);
+  -o-transform: translateY(15px);
 }
 /* h3{
   font-size:25px;
@@ -206,12 +191,16 @@ p{
 
 .gradient,
 .active {
-  background: linear-gradient(#ee6767, #d4cdac);
+  background: linear-gradient(#9034ba, #b65572);
 }
 .active {
   color: #fff;
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
 }
 @layer base {
   body {
@@ -248,4 +237,57 @@ p{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.cards {
+  width: 190px;
+  height: 354px;
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: inherit;
+  height: inherit;
+  background: rgba(255,255,255,.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+
+.cards:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#abf305, #53ef7d);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+.circle:nth-child(1) {
+  top: -25px;
+  left: -25px;
+}
+
+.circle:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+  animation-name: move-down1;
+}
+
+@keyframes move-up6 {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes move-down1 {
+  to {
+    transform: translateY(10px);
+  }
 }
