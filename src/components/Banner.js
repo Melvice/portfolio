@@ -13,6 +13,9 @@ import {fadeIn, variants} from '../variants'
 const Banner  = () => {
     return (
       <div className='min-h-[100vh] lg:min-h-[95vh] flex items-center bgBanner' id = 'home'>
+        {/* background square*/}
+        <div className='absolute inset-0 bg-black/50 z-[-1] back'>
+          </div>
         <div className='homeUI  backdrop:blur-2xl px-8'>
         <div className='container mx-auto '>
           <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
@@ -23,7 +26,7 @@ const Banner  = () => {
             initial='hidden' 
             whileInView={'show'} 
             viewport={{once: false, amount: 0.7}} 
-            className='text-[36px] font-bold leading-[0.9] lg:text-[80px]'>
+            className='text-[36px] font-bold leading-[0.9] lg:text-[80px] name'>
               MELVICE JUNIOR
               <span className='name'> GUIMFACK </span>
               </motion.h1>

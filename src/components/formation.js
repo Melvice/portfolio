@@ -24,16 +24,19 @@ import visualStudio from '../assets/tools/VisualStudio.png'
 import pgadmin from '../assets/tools/postgresql.png'
 import gitlab from '../assets/tools/gitlab-original.png'
 // video
-import video from '../assets/rain.mp4'
 
 const Formation  = () => {
     return (
       <div className='section bgFormation' id = 'formation'>
+        <div className='circ bg-black/50'></div>
         <div className='container mx-auto'>
+          <div className='radiant-1'></div>
           <div>
             <div className='flex-1 text-center font-secondary lg:text-left mb-14'>
               <div className='flex-1 text-center font-secondary lg:text-left'>
-                <h2 className='h2 title'> Formation</h2>
+                <h2 className='h2 title'> Formation</h2> 
+                <div class="circle"></div>
+                <div class="circle"></div>
               </div>
               {/*cards*/}
               <div className='formationUI '>
@@ -55,6 +58,7 @@ const Formation  = () => {
                     <img src={maisonneuve} alt="Maisonneuve" />
                   </div>
                 </div>
+                <div class="circle "></div>
               </div>
               {/* Skills*/}
               <div className='flex-1 text-center font-secondary lg:text-left '>
@@ -72,7 +76,6 @@ const Formation  = () => {
                             <img src={cPlusPlus} alt="c++" className='ml-2'/>
                             <img src={sql} alt="SQL" className='ml-2'/><br/>
                         </div>
-                        
                       </div>
                       <div class="skill-card mb-4 px-8">
                         <span><i aria-hidden=""></i></span>

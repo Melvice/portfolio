@@ -4,11 +4,20 @@
 
 body {
   /* background:  #28293E; */
-  background-image: url('./assets/polygon.jpg');
+  /* background-image: url('./assets/polygon.jpg');
+   */
+  background: radial-gradient(166.42% 82.86% at 67.33% 51.79%, #38505A 0%, #0E1214 100%);
   background-size:cover;
   background-repeat: no-repeat;
 } 
+.back{
+  width: 1692.605px;
+  height: 1317.947px;
+  transform: rotate(53.472deg);
+  flex-shrink: 0;
+}
 
+/************ */
 .img{
   margin-left: 9rem;
 }
@@ -16,34 +25,27 @@ body {
 .bgBanner{
   /* background:  #28293E; */
   /* background-image: url('./assets/polygon.jpg'); */
+  background: radial-gradient(166.42% 82.86% at 67.33% 51.79%, #38505A 0%, #0E1214 100%);
   background-size:cover;
   background-repeat: no-repeat;
+}
+.bg-project{
+  background: radial-gradient(166.42% 82.86% at 67.33% 51.79%, #38505A 0%, #0E1214 70%);
 }
 
 .bgFormation{
-  background-image: url('./assets/polygon.jpg');
+  background: radial-gradient(166.42% 82.86% at 67.33% 51.79%, #38505A 0%, #0E1214 50%);  
   background-size:cover;
   background-repeat: no-repeat;
-        -webkit-animation: slidein 100s;
-        animation: slidein 100s;
-
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-
-        -webkit-animation-direction: alternate;
-        animation-direction: alternate;   
 }
 
 @-webkit-keyframes slidein {
-  from {background-position: top; background-size:2000px; }
+  from {background-position: top; background-size:3000px; }
   to {background-position: -100px 0px;background-size:2750px;}
   }
   
   @keyframes slidein {
-  from {background-position: top;background-size:2000px; }
+  from {background-position: top;background-size:3000px; }
   to {background-position: -100px 0px;background-size:2750px;}
   
   }
@@ -91,7 +93,7 @@ body {
   overflow: hidden;
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 1), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 300ms;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
@@ -141,7 +143,6 @@ body {
 }
 
 .homeUI{
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 0px );
 -webkit-backdrop-filter: blur( 0px );
 border-radius: 10px;
@@ -150,7 +151,11 @@ border-radius: 10px;
 width: 100vw;
 margin: 0 5% 10% 5%;
 padding: 50px;
-background:#20212467
+background:#20212467;
+background-blend-mode: overlay, normal;
+backdrop-filter: blur(40px);
+border-radius: 45px;
+box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.55);
 }
 
 .formationUI{
@@ -163,12 +168,30 @@ background:#20212467
   margin-bottom: 2%;
   padding: 0.5%;
 }
+.circ{
+  width: 1600px;
+  height: 1600px;
+  flex-shrink: 0;
+  border-radius: 700px;
+  position: absolute;
+  left: 30%;
+  z-index: -1;
+}
 .radiant{
   width: 625px;
   height: 700px;
   flex-shrink: 0;
   border-radius: 700px;
   background: radial-gradient(50% 50.00% at 50% 50.00%, #763CAC 0%, rgba(50, 15, 133, 0.00) 100%);
+  position: absolute;
+  left: 30%;
+}
+.radiant-1{
+  width: 625px;
+  height: 700px;
+  flex-shrink: 0;
+  border-radius: 700px;
+  background: radial-gradient(50% 50.00% at 50% 50.00%, #618d59 0%, rgba(50, 15, 133, 0.00) 100%);
   position: absolute;
   left: 30%;
 }
@@ -231,8 +254,6 @@ background:#20212467
   -o-border-radius: 50px;
 }
 .desc-container{
-  border-radius: 14px;
-  background: url(./assets/Rectangle.png), lightgray 0% 0% / 154.22531366348267px 154.22531366348267px repeat, radial-gradient(151.92% 127.02% at 15.32% 21.04%, rgba(118, 60, 172, 0.20) 0%, rgba(110, 191, 244, 0.04) 77.08%, rgba(70, 144, 212, 0.00) 100%);
   background-blend-mode: overlay, normal;
   backdrop-filter: blur(40px);
   height: 165px;
@@ -243,10 +264,10 @@ background:#20212467
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  border-radius: 15px;
-  box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
   border: 1px solid rgba(5, 5, 5, 0.521);
   padding: 5%;
+  border-radius: 45px;
+  box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.55);
 }
 .desc{
   color: #FFF;
@@ -288,23 +309,21 @@ p{
 } */
 
 .btn {
-  border-radius: 50px;
   padding: 1rem;
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  outline: none;
   line-height: 2rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 60px;
-  box-shadow: 0px 4.42px 107.23px rgba(255, 86, 246, 0.51);
-  background: linear-gradient(#9034ba, #b65572);
   /* background: url(./assets/Rectangle.png), lightgray 0% 0% / 154.22531366348267px 154.22531366348267px repeat, radial-gradient(151.92% 127.02% at 15.32% 21.04%, rgba(118, 60, 172, 0.20) 0%, rgba(110, 191, 244, 0.04) 77.08%, rgba(70, 144, 212, 0.00) 100%); */
   background-blend-mode: overlay, normal;
   backdrop-filter: blur(40px);
-  border: 1px solid rgb(112, 20, 138);
+  border-radius: 8px;
+  background: linear-gradient(90deg, #262626 0%, #363534 100%);
+  border:2px solid #F8B444 ;
 
 }
 .card-container{
@@ -316,12 +335,8 @@ p{
 }
 .btn:hover{
   transform: scale(1.1);
-  box-shadow: 0px 4.42px 107.23px rgba(255, 86, 246, 0.51);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 86, 246, 1) 0%,
-    rgba(217, 109, 109, 1) 100%
-  );
+  box-shadow: 0px 4.42px 107.23px rgba(252, 141, 22, 0.51);
+  background: linear-gradient(90deg, #F8B444 0%, #FC7E0A 100%);
 }
 
 .gradient,
