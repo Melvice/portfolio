@@ -26,7 +26,7 @@ module.exports = {
     },
     backgroundImage: {
     about: "url('/src/assets/gradient.jpg')",
-    contact: "url('/src/assets/images/contact.jpg')",
+    contact: "url('/src/assets/gradient.jpg')",
     },
   }
   }, 
