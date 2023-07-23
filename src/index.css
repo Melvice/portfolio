@@ -30,7 +30,7 @@ body {
 
   .project-image {
     position: absolute;
-    object-fit: cover;
+    object-fit:cover;
     width: 100%;
     height: 100%;
     top: 0;
@@ -45,7 +45,7 @@ body {
 
   .project-title {
     position: absolute;
-    inset: auto auto 100px 30px;
+    inset: auto auto 50px 30px;
     margin: 0;
     transition: inset .3s .3s ease-out;
     font-family: 'Roboto Condensed', sans-serif;
@@ -62,6 +62,7 @@ body {
   &:hover .project-title { 
     inset: auto auto 280px 30px;
     transition: inset .3s ease-out;
+    z-index: 2;
   }
 
   .project-desc, .link {
@@ -73,11 +74,17 @@ body {
 
   .project-desc {
     inset: auto auto 80px 30px;
+    background-color: #1d1c1b99;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-left: 5%;
   }
 
   .link {
     inset: auto auto 40px 30px;
-    color: red;
+    color: rgb(96, 224, 149);
     text-decoration: none;
     cursor: pointer;
   }
@@ -106,6 +113,7 @@ body {
 }
 .bg-project{
   background: radial-gradient(166.42% 82.86% at 67.33% 51.79%, #38505A 0%, #0E1214 70%);
+  z-index: 0;
 }
 
 .bgFormation{
@@ -124,7 +132,18 @@ body {
   to {background-position: -100px 0px;background-size:2750px;}
   
   }
-
+.theme{
+  background: black;
+  border-radius: 8px;
+  background-blend-mode: overlay, normal;
+  position: absolute;
+  z-index: 0;
+  width: 1692.605px;
+  height: 1317.947px;
+  transform: rotate(53.472deg);
+  flex-shrink: 0;
+  left: 40%;
+}
 .center {
   display: flex;
   align-items: center;
@@ -366,22 +385,6 @@ box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.55);
   -ms-transform: translateY(15px);
   -o-transform: translateY(15px);
 }
-/* h3{
-  font-size:25px;
-  font-family: 'Abel', sans-serif;
-  color:rgb(255,255,255);
-  text-shadow: 0 0 2px rgb(255,255,255);
-  transform: translatey(10px);
-}
-
-p{
-  
-  font-family: 'Abel', sans-serif;
-  color: white;
-  text-align:center;
-  width:220px;
-  transform: translatex(12px);
-} */
 
 .btn {
   padding: 1rem;
@@ -393,7 +396,6 @@ p{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 60px;
-  /* background: url(./assets/Rectangle.png), lightgray 0% 0% / 154.22531366348267px 154.22531366348267px repeat, radial-gradient(151.92% 127.02% at 15.32% 21.04%, rgba(118, 60, 172, 0.20) 0%, rgba(110, 191, 244, 0.04) 77.08%, rgba(70, 144, 212, 0.00) 100%); */
   background-blend-mode: overlay, normal;
   backdrop-filter: blur(40px);
   border-radius: 8px;
