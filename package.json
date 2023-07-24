@@ -1,8 +1,8 @@
 {
-  "name": "my-app",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://melvice.github.io/my-portfolio",
+  "homepage": "https://melvice.github.io/portfolio",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.16.5",
