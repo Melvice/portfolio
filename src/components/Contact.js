@@ -1,8 +1,21 @@
 import React from 'react'
 // import icons
 import { MdOutlineEmail, MdLocalPhone } from 'react-icons/md'
+import { BiSend } from 'react-icons/bi'
+// send email
+import emailjs from '@emailjs/browser';
 
 const Contact  = () => {
+  // send email
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(
+      'service_agsdtbj',
+      'template_2x38qz9',
+      e.target,
+      'F_0TlFYjmZtDfqxRE'
+    )
+  }
     return (
       <div className='section' id = 'contact'>
         <div className='container mx-auto'>
@@ -32,7 +45,7 @@ const Contact  = () => {
               </div>
               {/**contact form */}
               <div className='contact-form flex flex-1 flex-col flex-wrap lg:gap-5'>
-                <form action="" method="POST"> 
+                <form onSubmit={sendEmail}> 
                 {/**Todo: be able to send the message */}
                   <div className='flex flex-1 flex-col flex-wrap lg:gap-5'>
                     <div className='flex flex-1 flex-col flex-wrap lg:gap-5 z-10 '>
@@ -41,7 +54,7 @@ const Contact  = () => {
                       <textarea rows={6} cols={50} name="message"
                         placeholder=" Your Message" className='area' required/>
                         </div>
-                      <button type="submit" className='btn btn:lg'>Send Message</button>
+                      <button type="submit" className='btn btn:lg'>Send Message <BiSend className='inline'/>  </button>
                       </div>
                     </form>
                     </div>
