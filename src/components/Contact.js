@@ -13,19 +13,19 @@ const Contact  = () => {
             <div className='flex flex-1 flex-wrap justify-between'>
               <div className='contact flex flex-1 flex-col flex-wrap lg:gap-5'>
                 {/**email contact */}
-                <article class="contact-card">
+                <article class="contact-card mb-4">
                   <MdOutlineEmail/>
                   <h4>Email</h4>
-                  <p> mguimfack@hotmail.com </p>
+                  <p className='mb-8'> mguimfack@hotmail.com </p>
                   <a href="mailto:
-                    mailto:mguimfack@hotmail.com" target="_top">
+                    mailto:mguimfack@hotmail.com" target="_top" >
                     Send a Message</a> 
                 </article>
                 {/**phone contact */}
                 <article class="contact-card">
                   <MdLocalPhone/>
                   <h4>Phone</h4>
-                  <p> +1 (438) 835 4940  </p>
+                  <p className='mb-8'> +1 (438) 835 4940  </p>
                   <a href="tel:+1 (438) 835- 4940" target="_top">
                     Call me</a>
                 </article>
@@ -35,11 +35,11 @@ const Contact  = () => {
                 <form action="" method="POST"> 
                 {/**Todo: be able to send the message */}
                   <div className='flex flex-1 flex-col flex-wrap lg:gap-5'>
-                    <div className='flex flex-1 flex-col flex-wrap lg:gap-5 z-10'>
-                      <input type="text" name="name" placeholder=" Your full name" required/>
-                      <input type="email" name="email" placeholder=" Your email" required/>
+                    <div className='flex flex-1 flex-col flex-wrap lg:gap-5 z-10 '>
+                      <input type="text" name="name" placeholder=" Your full name" className='area' required/>
+                      <input type="email" name="email" placeholder=" Your email" className='area'required/>
                       <textarea rows={6} cols={50} name="message"
-                        placeholder=" Your Message" required/>
+                        placeholder=" Your Message" className='area' required/>
                         </div>
                       <button type="submit" className='btn btn:lg'>Send Message</button>
                       </div>
