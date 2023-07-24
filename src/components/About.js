@@ -4,8 +4,6 @@ import robot from '../assets/robotMaster.jpg'
 import sport from '../assets/sport.jpg'
 import volunteer from '../assets/volunteer.png'
 
-
-
 const About  = () => {
     return (
       <div className='section bgAbout' id = 'about' >
@@ -15,11 +13,10 @@ const About  = () => {
             {/*text*/}
             <div className='flex-1 text-center font-secondary lg:text-left mb-14'>
               <h2 className='h2 title'> About Me.</h2>
-              <h3 className='h3 mb-16 desc-container'> I'm a student at Polytechnic de Montreal studying
-                Computer Science and Engineering. I'm a full-stack developer with
-                experience in React, Node.js, and MongoDB. I'm also interested in
-                machine learning and data science. I'm currently looking for a
-                an internship in software development.</h3>
+              <h3 className='h3 mb-16 desc-container'> 
+                I'm an Engineering student at Polytechnic de Montreal. 
+                Proficient in React, c++, Javascript, Angular and more. I offer adaptability, collaborative spirit, problem-solving aptitude, 
+                and a passion for user experience. Seeking a software development internship to contribute innovative solutions to your team.</h3>
              {/*cards*/}
               <div className='flex flex-1 flex-row gap-y-8 lg:flex-row lg:items-center lg:gap-x-12 justify-between card-container'>
                 <div class="cards">
@@ -55,15 +52,6 @@ const About  = () => {
                         </div>
                     </div>
                 </div>
-                {/* <div className='card'>
-                  <div className='card-layout '>
-                    <img src={robot} className='image ml-6 '/> 
-                    <div className='mt-6'>
-                      <h3 className='subtitle'>Membre de Polystar</h3>
-                      <p className='desc'>description</p>
-                    </div>
-                  </div>
-                </div>  */}
             </div>
            </div>
             </div>
