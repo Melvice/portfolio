@@ -19,7 +19,6 @@ const  App = () => {
     <Formation/>
     <Projects/>
     <Contact/>
-    <div className='h-[8000px] '></div>
     </div>
     </>
   );

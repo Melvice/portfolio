@@ -1,7 +1,7 @@
 import React from 'react';
 //images 
 import robot from '../assets/robotMaster.jpg'
-import sport from '../assets/sport.jpg'
+import hobbies from '../assets/hobbies.jpg'
 import volunteer from '../assets/volunteer.png'
 
 const About  = () => {
@@ -26,7 +26,7 @@ const About  = () => {
                       <img src={robot} className='image ml-6 '/> 
                         <div className='mt-6'>
                           <h3 className='subtitle'>Member of Polystar</h3>
-                          <p className='desc'>description</p>
+                          <p className='desc'>Develop useful functionalities for competition robots using C++</p>
                         </div>
                     </div>
                 </div>
@@ -34,10 +34,20 @@ const About  = () => {
                     <div class="circle"></div>
                     <div class="circle"></div>
                     <div class="card-inner">
-                        <img src={sport} className=' image ml-6 '/> 
-                        <div className='mt-6'>
-                          <h3 className='subtitle'>Sport Addict</h3>
-                          <p className='desc'>description</p>
+                        <img src={hobbies} className=' image ml-6 '/> 
+                        <div className='mt-8'>
+                          <h3 className='subtitle'>Hobbies</h3>
+                          <p className='desc'> 
+                          <ul>
+                            <li> - Reading</li>
+                            <li> - Basketball</li>
+                            <li> - Badminton</li>
+                            <li> - Tennis</li>
+                            <li> - Bodybuilding</li>
+                            <li> - Coding</li>
+                            <li> - Music</li>
+                          </ul>
+                          </p>
                         </div>
                     </div>
                 </div>
@@ -48,7 +58,14 @@ const About  = () => {
                         <img src={volunteer} className='image ml-6 '/> 
                         <div className='mt-6'>
                           <h3 className='subtitle'>Socially involved</h3>
-                          <p className='desc'>description</p>
+                          <p className='desc'>Lots of volunteer experience : 
+                          <ul>
+                            <li> - Volunteer at the CHUM</li>
+                            <li> - Volunteer at the CLSC</li>
+                            <li> - Volunteer at the Saint Vincent De Paul society</li>
+                            <li> - Volunteer at the Pierre-Joseph-Triest CHSLD</li>
+                          </ul>
+                          </p>
                         </div>
                     </div>
                 </div>

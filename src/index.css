@@ -3,13 +3,15 @@
 @tailwind utilities;
 
 body {
-  /* background:  #28293E; */
-  /* background-image: url('./assets/polygon.jpg');
-   */
   background: radial-gradient(166.42% 82.86% at 67.33% 51.79%, #38505A 0%, #0E1214 100%);
   background-size:cover;
   background-repeat: no-repeat;
 } 
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .back{
   width: 1692.605px;
   height: 1317.947px;
@@ -19,14 +21,16 @@ body {
 /****************** */
 /*projects*/
 .project-card {
-  width: 16rem;
-  height: 22rem;
+  width: 18rem;
+  height: 32rem;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
   color: rgb(240, 240, 240);
-  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.8);
   transition: all 0.3s ease-in-out;
+  margin-bottom: 10px;
+  margin-right: 5px;
 
   .project-image {
     position: absolute;
@@ -60,7 +64,7 @@ body {
   }
 
   &:hover .project-title { 
-    inset: auto auto 280px 30px;
+    inset: auto auto 350px 30px;
     transition: inset .3s ease-out;
     z-index: 2;
   }
@@ -74,10 +78,10 @@ body {
 
   .project-desc {
     inset: auto auto 80px 30px;
-    background-color: #1d1c1b99;
+    background-color: #1d1c1bd7;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.5);
     font-family: 'Roboto Condensed', sans-serif;
     padding-left: 5%;
   }
@@ -364,6 +368,7 @@ box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.55);
   color: #FFF;
   font-family: Poppins;
   font-size: 26px;
+  text-align: center;
   font-style: normal;
   font-weight: 600;
   line-height: 32.5px; /* 125% */
@@ -405,20 +410,25 @@ box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.55);
 .desc{
   color: #FFF;
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 10.5px; /* 131.25% */
+  line-height: 18.5px; /* 131.25% */
+  text-align: start;
   width: fit-content;
   height: fit-content;
   flex-shrink: 0;
-  margin-top: 50px;
+  margin-top: 20px;
   padding-left: 15%;
 }
 
 .cards img{
-  width:130px;
-  height:120px;
+  width:180px;
+  height:140px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-left: 17%;
+
   -webkit-transform: translateY(15px);
   -moz-transform: translateY(15px);
   -ms-transform: translateY(15px);
@@ -470,7 +480,7 @@ box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.55);
 }
 @layer base {
   body {
-    @apply font-secondary font-semibold leading-8 text-lg text-white overflow-hidden ;
+    @apply font-secondary font-semibold leading-8 text-lg text-white ;
   }
   .h2{
     @apply font-primary font-semibold leading-8 text-[32px] mb-6 tracking-[10%] uppercase;
@@ -506,8 +516,8 @@ code {
 }
 
 .cards {
-  width: 190px;
-  height: 354px;
+  width: 280px;
+  height: 420px;
   transition: all 0.2s;
   position: relative;
   cursor: pointer;
@@ -523,7 +533,11 @@ code {
 }
 
 .cards:hover {
-  transform: scale(1.04) rotate(1deg);
+  transform: scale(1.18) rotate(1deg);
+  -webkit-transform: scale(1.18) rotate(1deg);
+  -moz-transform: scale(1.18) rotate(1deg);
+  -ms-transform: scale(1.18) rotate(1deg);
+  -o-transform: scale(1.18) rotate(1deg);
 }
 
 .circle {
