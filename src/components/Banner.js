@@ -1,6 +1,6 @@
 import React from 'react'
 //images 
-import image from '../assets/photo.png'
+import image from '../assets/melviceProfile.jpg'
 //icons 
 import {FaGithub, FaLinkedinIn } from 'react-icons/fa'
 // type animation

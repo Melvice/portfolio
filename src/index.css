@@ -343,8 +343,10 @@ box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.55);
 }
 .portrait{
   border-radius: 707px;
-  border: 12px solid #f8f8f8;
-  box-shadow: #688597 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
+  border: 12px solid #fafbfb;
+  box-shadow: #976868 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
+  /* transform:  rotateZ(-10deg ); */
+  height: 600px;
 
 }
 .title{
