@@ -66,7 +66,7 @@ body::-webkit-scrollbar {
   &:hover .project-title { 
     inset: auto auto 350px 30px;
     transition: inset .3s ease-out;
-    z-index: 2;
+    z-index: 0;
   }
 
   .project-desc, .link {
@@ -78,8 +78,7 @@ body::-webkit-scrollbar {
 
   .project-desc {
     inset: auto auto 80px 30px;
-    background-color: #1d1c1bd7;
-    padding: 10px;
+    background-color: #000000d7;
     border-radius: 5px;
     box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.5);
     font-family: 'Roboto Condensed', sans-serif;
@@ -344,7 +343,7 @@ box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.55);
 .portrait{
   border-radius: 707px;
   border: 12px solid #fafbfb;
-  box-shadow: #976868 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: #000000 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
   /* transform:  rotateZ(-10deg ); */
   height: 600px;
 
@@ -519,7 +518,7 @@ code {
 
 .cards {
   width: 280px;
-  height: 420px;
+  height: 500px;
   transition: all 0.2s;
   position: relative;
   cursor: pointer;

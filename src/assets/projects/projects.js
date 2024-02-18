@@ -7,32 +7,32 @@ import robotMaster from '../robotMaster.jpg'
 const projectList = [
   {
     id: 1,
-    title: 'Embedded system',
-    desc: 'Teamwork project consisting in programming a robot in c/c++ in order to complete a task. Several tests were needed in order to ensure the best quality possible.',
+    title: 'Embedded System',
+    desc: 'A collaborative project where we programmed a robot using C/C++ to execute specific tasks. Rigorous testing phases were conducted to guarantee optimal performance and reliability. This project emphasized on real-world applications of embedded systems and teamwork.',
     image: robot,
     link: ''
   },
   {
     id: 2,
-    title: 'Web difference game',
-    desc: "Full stack web project with a team of 6 people. The project consists in developing a web version of the game of the seven differences, also called the game of seven errors. ",
+    title: 'Web Difference Game',
+    desc: "A dynamic full-stack web development project, undertaken by a team of six, aimed at creating an online version of the classic 'Find the Seven Differences' game. This project showcased our ability to work collaboratively on a web platform, utilizing modern web technologies to enhance user interaction and engagement.",
     image: VQ,
     link: 'https://polytechnique-montr-al.gitlab.io/log2990/20231/equipe-208/LOG2990-208'
   },
   {
     id: 3,
-    title: 'Music website',
-    desc: 'Simple starting website project using JavaScript, html and css with only 9 available songs.',
+    title: 'Music Website',
+    desc: 'An introductory web development project focused on building a music streaming site using JavaScript, HTML, and CSS. Features a curated selection of 9 songs, demonstrating foundational web development skills and a passion for music.',
     image: musicWeb,
     link: 'https://melvice.github.io/MusicWebsite/music'
   },
   {
     id: 4,
-    title: 'Robotic competition',
-    desc: 'Participated in the the 2023 RMNA (RoboMaster North America) competition in Seattle at the University of Washington as part of the Polystar Team. We build and coded 3 different robots (in c++) for it',
+    title: 'Robotic Competition',
+    desc: 'Competed in the 2023 RoboMaster North America (RMNA) competition in Seattle, representing the Polystar Team Polytechnic of Montreal. Our team engineered and programmed three distinct robots using C++, showcasing our innovative approach to robotics and team-based problem solving.',
     image: robotMaster,
     link: 'https://www.polystarmtl.com/'
   },
-  ]
+]
 
 export default projectList

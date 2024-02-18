@@ -26,12 +26,13 @@ const Projects  = () => {
                           <p className='project-desc'>
                             {desc}
                           </p>
-                          <a href= {link} className="link" target="_blank">
+                         {link  && <a href= {link} className="link" target="_blank">
                             View Project 
                             <span class="material-symbols-outlined">
                               arrow_right_alt
                             </span>
                           </a>
+                        }
                     </div>
                   </div>
                     )})}

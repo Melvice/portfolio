@@ -5,7 +5,7 @@ import { BsClipboardData, BsBriefcase, BsChatSquare } from 'react-icons/bs'
 // links
 import { Link } from 'react-scroll'
 // tooltip
-import { Tooltip } from 'react-tooltip'
+// import { Tooltip } from 'react-tooltip'
 
 
 const Nav  = () => {
@@ -23,7 +23,7 @@ const Nav  = () => {
                     data-tooltip-content="Home"      
                     className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
                     <BiHomeAlt/>
-                    <Tooltip id="tooltip1"
+                    {/* <Tooltip id="tooltip1"
                         place="right"
                         effect="solid"
                         delayShow={100}
@@ -32,7 +32,7 @@ const Nav  = () => {
                         className='tooltip'
                         backgroundColor="rgba(0, 0, 0, 0.45)"
                         textColor="white"
-                    />
+                    /> */}
                 </Link>
                 <Link 
                     to='about'
@@ -44,7 +44,7 @@ const Nav  = () => {
                     data-tooltip-content="About"  
                     className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
                     <BiUser/>
-                    <Tooltip id="tooltip2"
+                    {/* <Tooltip id="tooltip2"
                         place="right"
                         effect="solid"
                         delayShow={100}
@@ -53,7 +53,7 @@ const Nav  = () => {
                         arrowColor="transparent"
                         backgroundColor="rgba(0, 0, 0, 0.45)"
                         textColor="white"
-                    />
+                    /> */}
                 </Link>
                 <Link 
                     to='formation'
@@ -65,7 +65,7 @@ const Nav  = () => {
                     data-tooltip-content="formation"  
                     className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
                     <BsClipboardData/>
-                    <Tooltip id="tooltip3"
+                    {/* <Tooltip id="tooltip3"
                         place="right"
                         effect="solid"
                         delayShow={100}
@@ -74,7 +74,7 @@ const Nav  = () => {
                         arrowColor="transparent"
                         backgroundColor="rgba(0, 0, 0, 0.45)"
                         textColor="white"
-                    />
+                    /> */}
                 </Link>
                 <Link 
                     to='projects'
@@ -86,7 +86,7 @@ const Nav  = () => {
                     data-tooltip-content="Projects"
                     className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
                     <BsBriefcase/>
-                    <Tooltip id="tooltip4"
+                    {/* <Tooltip id="tooltip4"
                         place="right"
                         effect="solid"
                         delayShow={100}
@@ -95,7 +95,7 @@ const Nav  = () => {
                         arrowColor="transparent"
                         backgroundColor="rgba(0, 0, 0, 0.45)"
                         textColor="white"
-                    />
+                    /> */}
                 </Link>
                 <Link 
                     to='contact'
@@ -107,7 +107,7 @@ const Nav  = () => {
                     data-tooltip-content="Contact"
                     className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
                     <BsChatSquare/>
-                    <Tooltip id="tooltip5"
+                    {/* <Tooltip id="tooltip5"
                         place="right"
                         effect="solid"
                         delayShow={100}
@@ -115,7 +115,7 @@ const Nav  = () => {
                         className='tooltip'
                         arrowColor="transparent"
                         textColor="white"
-                    />
+                    /> */}
                 </Link>
             </div>
         </div>
