@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.8294a238.css",
+    "main.js": "/portfolio/static/js/main.6a3e8ae6.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/maisonneuve.jpg": "/portfolio/static/media/maisonneuve.4e1736deac2f2844fcb4.jpg",
+    "static/media/robotMaster.jpg": "/portfolio/static/media/robotMaster.3fa18d4cd92a3672687c.jpg",
+    "static/media/robot.jpg": "/portfolio/static/media/robot.2993bc1030839fb8297b.jpg",
+    "static/media/volunteer.png": "/portfolio/static/media/volunteer.05986143097258c1e0ba.png",
+    "static/media/ecole-poly.jpeg": "/portfolio/static/media/ecole-poly.72e8207ce1776467b6b6.jpeg",
+    "static/media/362238111___n.jpg": "/portfolio/static/media/362238111_1361112497852996_7204551586153655371_n.1878ba6b45320c7904de.jpg",
+    "static/media/portrait.jpg": "/portfolio/static/media/portrait.03c3efa9d33cb35c74f0.jpg",
+    "static/media/stingray-logo.jpg": "/portfolio/static/media/stingray-logo.51c239047c8485abc5eb.jpg",
+    "static/media/musicWeb.jpg": "/portfolio/static/media/musicWeb.eff2e42466d23e9540ed.jpg",
+    "static/media/VQ.jpg": "/portfolio/static/media/VQ.67892fff79827ba8978a.jpg",
+    "static/media/Python.png": "/portfolio/static/media/Python.235bb52a4efc1e6200bf.png",
+    "static/media/VisualStudio.png": "/portfolio/static/media/VisualStudio.71bbaf697d635c8a63bb.png",
+    "static/media/logo-no-background.svg": "/portfolio/static/media/logo-no-background.c33fa44ca0d41785b84cae00175971ee.svg",
+    "index.html": "/portfolio/index.html",
+    "main.8294a238.css.map": "/portfolio/static/css/main.8294a238.css.map",
+    "main.6a3e8ae6.js.map": "/portfolio/static/js/main.6a3e8ae6.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8294a238.css",
+    "static/js/main.6a3e8ae6.js"
+  ]
+}
